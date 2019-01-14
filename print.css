@@ -1,0 +1,76 @@
+#impression {
+    display: none;
+}
+
+.pdf {
+  color: #eeeeee;
+} 
+
+@page {
+  margin: 0;
+  size:A4 portrait;
+}
+body {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  margin: 5%;
+}
+nav, footer, .deb4 img {
+    display: none;
+}
+
+.colL {
+    float:left;
+    width:45%;
+  }
+  
+  .colR {
+    float:right;
+    width:45%;
+  }
+
+
+  .mid2 h1 {
+    text-align: center;
+    font-size: 250%;
+   }
+
+
+  h2 {
+    font-size:20px ;
+  }
+
+
+
+  p {
+    padding: 5% 0% 0% 0%;
+  
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 15px;
+  }
+
+  article div ul, article div ul li {
+    font-size: 15px;
+  }
+
+
+  .deb1 {
+      margin-left: 8%;
+  }
+
+
+  .top1 {
+    margin-top: 5%;
+  }
+
+  .top2 {
+    margin-bottom: 3%;
+  }
+
+  .link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color:#000000;
+  }

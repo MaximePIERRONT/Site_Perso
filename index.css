@@ -1,0 +1,78 @@
+
+
+
+h1 {
+  margin: 2.5%;
+}
+
+
+[class*="col"] {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+  padding-bottom: 2.5%;
+  height: 140px;
+  background-color: #eeeeee;  
+}
+
+
+@media only screen and (min-width: 1081px) {
+  /* For desktop: */
+.col1 {
+  float:left;
+  width:39%;
+  margin-left: 10%;
+}
+
+.col2 {
+  float:left;
+  width:39%;
+  margin-left: 2%;
+}
+
+.col3 {
+  float:left;
+  width:49%;
+  margin-left: 10%;
+}
+
+.col4{
+  float:left;
+  width:29%;
+  margin-left: 2%;
+}
+
+}
+
+.firstp
+{
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: #f22613;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 1%;
+}
+
+.text_case {
+  font-family: 'Roboto', sans-serif;
+  color: #727276;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.esp {
+  text-decoration: none;
+  padding: 5px;
+  background-color: #f22613;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+
+
+.esp:hover {
+  background-color:#eeeeee;
+  color: #f22613;
+}

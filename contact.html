@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Maxime PIERRONT</title>
+  
+  
+      <link rel="icon" type="image/png" href="./images/capture.png" />
+      <link rel="stylesheet" href="theme.css">
+      <link rel="stylesheet" href="contact.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Haut de page">↑</button>
+<header>
+  <nav>
+    <ul>
+      <li class="nav-logo"><a href="./index.html"><img class="logo" src="./images/logo_nav.png" alt="logo"></a></li>
+      <li class="nav-text"><a href="./index.html">Accueil</a></li>
+      <li class="nav-text"><a href="./menu_proj.html">Projets</a></li>
+      <li class="nav-text"><a href="./cv.html">CV</a></li>
+      <li class="nav-text"><a class="here" href="./contact.html">Contact</a></li>
+      <li class="nav-right"><a href="mailto:maxime.pierront@gmail.com"><img class="little_icon" src="./images/icon_mail.png"  alt="mail"></a></li>
+      <li class="nav-right"><a href="https://fr.linkedin.com/"><img class="little_icon" src="./images/icon_linkedin.png" alt="linkedin"></a></li>
+    </ul>
+  </nav>
+</header>
+<div class="sec">
+  <div class="art1">
+    <h1>Contact</h1>
+    <h4>
+        Des questions ? Renseignez ce formulaire
+    </h4>
+    <br>
+    <form onsubmit="alert('Message transmis!'); return false;">
+      <input class="decale" type="radio" name="gender" value="male" checked> Monsieur 
+      <input class="decale" type="radio" name="gender" value="female"> Madame<br>
+      Nom :<br>
+      <input type="text" name="lastname" required><br>
+      Prénom :<br>
+      <input type="text" name="firstname" required><br>
+      E-mail :<br>
+      <input type="email" name="email" required><br>
+      Message :<br>
+      <textarea name="message" id="message" placeholder="Écrivez votre message ici" required style="margin-top: 0px; margin-bottom: 20px; height: 117px;"></textarea>
+      <br>
+      <input type="submit" name="send"  value="Envoyer" class="bouton">
+    </form>   
+  </div>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</div>
+
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     document.getElementById("myBtn").style.display = "block";
+   } else {
+     document.getElementById("myBtn").style.display = "none";
+   }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+ document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+  <div class="art2">
+    <img class="imgcontact" src="./images/contact_img.png" alt="contact">
+  </div>
+
+
+<footer>
+    <div class="foot1">
+      <img class="logo_ft" src="./images/logo_nav.png" alt="logo">
+      <h6>Maxime PIERRONT. Tous droits réservés. 2019©</h6>
+      
+    </div>
+    <div class="foot2">
+        <a href="http://www.iutsf.u-pec.fr/"><img class="logo_upec" src="./images/UPEC_logo.svg" alt="upec"></a> 
+    </div>
+    <div class="foot3">
+        <a href="./contact.html">Contact</a>
+        <br>
+        <a href="./map_site.html">Plan du site</a>
+        <br>
+    </div>
+</footer>
+
+
+</body>
+</html>

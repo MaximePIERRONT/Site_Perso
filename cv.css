@@ -1,0 +1,154 @@
+form {
+    margin-top: 10%;
+}
+
+[class*="col"] {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+    padding-bottom: 2.5%;
+  }
+  
+  .deb4 {
+    float: right;
+    padding: 10px;
+  }
+
+  .mid {
+    padding: 0.5% 0% 8% 0%;
+    margin-top: 8%;
+    background-color:#eeeeee;
+  
+  }
+  
+  @media only screen and (min-width: 1081px) {
+    /* For desktop: */
+  .colL {
+    float:left;
+    width:37.5%;
+    margin-left: 10%;
+  }
+  
+  .colR {
+    float:left;
+    width:37.5%;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+
+  .deb1 {
+    float:left;
+    width:30%;
+    
+
+  }
+
+  .deb2 {
+    float:left;
+    width:15%;
+    margin-left: 10%;
+
+  }
+  .deb3 {
+    float:left;
+    width:20%;
+    margin-left: 10%;
+
+  }
+
+  .deb4 {
+    float: right;
+    width:2.5%;
+    margin-right: 2%;
+
+  }
+
+  .mid {
+    padding: 0.5% 0% 3.5% 0%;
+    margin-top: 3.1%;
+    background-color:#eeeeee;
+  
+  }
+}
+
+
+
+.deb1 ul, .deb2 ul, .deb3 ul {
+  list-style-type: none;
+  
+}
+
+.deb1 ul li, .deb2 ul li, .deb3 ul li {
+  float: left;
+}
+
+.img_ico {
+  width: 25px;
+}
+
+.mid2 h1 {
+ text-align: center;
+ font-size: 400%;
+}
+
+h2 {
+  padding: 5% 0% 5% 0%;
+  background-color: #eeeeee;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #727276;
+  margin-top: 4%;
+}
+
+p {
+  padding: 5% 0% 0% 0%;
+
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-size: 20px;
+}
+
+article div ul, article div ul li {
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-size: 20px;
+}
+
+.red {
+  color: #f22613;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+#map {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+}
+
+.pdf {
+
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #f22613;
+  font-weight: bold;
+ 
+}
+
+.pos_txt {
+  margin-top: 0.75%;
+}
+
+.printer {
+  margin-top: 15%;
+}
+
+.link {
+  color: #f22613;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" /> 
+  <title>Maxime PIERRONT</title>
+  
+  
+      <link rel="icon" type="image/png" href="./images/capture.png" />
+      <link rel="stylesheet" href="theme.css">
+      <link rel="stylesheet" href="projets.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   
+</head>
+
+<body>
+        <button onclick="topFunction()" id="myBtn" title="Haut de page">←</button>
+<header>
+  <nav>
+    <ul>
+      <li class="nav-logo"><a href="./index.html"><img class="logo" src="./images/logo_nav.png" alt="logo"></a></li>
+      <li class="nav-text"><a href="./index.html">Accueil</a></li>
+      <li class="nav-text"><a class="here" href="./menu_proj.html">Projets</a></li>
+      <li class="nav-text"><a href="./cv.html">CV</a></li>
+      <li class="nav-text"><a href="./contact.html">Contact</a></li>
+      <li class="nav-right"><a href="mailto:maxime.pierront@gmail.com"><img class="little_icon" src="./images/icon_mail.png" alt="mail"></a></li>
+      <li class="nav-right"><a href="https://fr.linkedin.com/"><img class="little_icon" src="./images/icon_linkedin.png" alt="linkedin"></a></li>
+      
+    </ul>
+  </nav>
+</header>
+<h1 class="intro">Scroll down</h1> <!-- Ceci est a enlever en mode mobile-->
+<h1>Attention déplacement horizontal</h1> <!-- Ceci est a enlever en mode mobile-->
+    <div class="front scroll">
+        <div class="text_horizon text1">
+            <p>
+                Il s'agit d'un projet fait dans le cadre de ma formation à l'UPEC de Fontainebleau.
+                <br>
+                C'est le jeu du memory, codé totalement en langage C.
+                <br><br>
+                Accèder au projet : <a href="https://github.com/MaximePIERRONT/Memory_C" target="_blank"> Memory</a>
+            </p>
+        </div>
+
+        <div class="text_horizon text2">
+          <p>
+              Fonctionnalités :
+              <br><br>
+              - Avoir un menu
+              <br><br>
+              - Choisir la taille de la grille
+              <br><br>
+              - Quitter dans le menu
+          </p>
+      </div>
+      <div class="text_horizon text3">
+        <p>
+            Pouvoir retourner les cartes :
+            <br>
+            Si elles sont diffrentes les retourner après 1 seconde
+            <br>
+            Sinon les laisser retournées
+        </p>
+    </div>
+    <div class="text_horizon text4">
+      <p>
+          Le memory possède une fonction triche :
+          <br>
+          Celle-ci permet de voir toutes les cartes retounées
+          <br><br>
+          Le memory inclus une fonction temps qui s'arrête si la fonction triche est activée
+      </p>
+  </div>
+
+
+        <img src="images/front2.png" alt="" /> <!-- Ceci est a enlever en mode mobile-->
+    </div>
+
+
+
+    <script src="./libs/jquery.min.js"></script>
+    <script src="./dist/js/jquery.jInvertScroll.js"></script>
+    <script>
+      (function($) {
+          $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+              {
+              height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+              onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+      }(jQuery));
+      </script>
+
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+   window.onscroll = function() {scrollFunction()};
+ 
+   function scrollFunction() {
+     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+       document.getElementById("myBtn").style.display = "block";
+     } else {
+       document.getElementById("myBtn").style.display = "none";
+     }
+   }
+ 
+   // When the user clicks on the button, scroll to the top of the document
+   function topFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
+ </script>
+ 
+</body>
+</html>

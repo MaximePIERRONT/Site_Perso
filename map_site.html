@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Maxime PIERRONT</title>
+  
+  
+      <link rel="icon" type="image/png" href="./images/capture.png" />
+      <link rel="stylesheet" href="theme.css">
+      <link rel="stylesheet" href="map_site.css">
+      <link rel="stylesheet" href="contact.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Haut de page">↑</button>
+<header>
+  <nav>
+    <ul>
+      <li class="nav-logo"><a href="./index.html"><img class="logo" src="./images/logo_nav.png" alt="logo"></a></li>
+      <li class="nav-text"><a href="./index.html">Accueil</a></li>
+      <li class="nav-text"><a  href="./menu_proj.html">Projets</a></li>
+      <li class="nav-text"><a href="./cv.html">CV</a></li>
+      <li class="nav-text"><a  href="./contact.html">Contact</a></li>
+      <li class="nav-right"><a href="mailto:maxime.pierront@gmail.com"><img class="little_icon" src="./images/icon_mail.png"  alt="mail"></a></li>
+      <li class="nav-right"><a href="https://fr.linkedin.com/"><img class="little_icon" src="./images/icon_linkedin.png" alt="linkedin"></a></li>
+    </ul>
+  </nav>
+</header>
+ 
+
+<h1>Plan du site</h1>
+<div class="test">
+  <ul>
+      <li class="nav-text"><a href="./index.html">Accueil</a></li>
+      <li class="nav-text"><a  href="./menu_proj.html">Projets</a></li>
+      <li class="nav-text"><a  href="./projets.html">Projet : Memory</a></li>
+      <li class="nav-text"><a  href="./projet_site.html">Projet : Site personnel</a></li>
+      <li class="nav-text"><a  href="./contact.html">Contact</a></li>
+      <li class="nav-text"><a href="./cv.html">CV</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+ <script>
+  // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     document.getElementById("myBtn").style.display = "block";
+   } else {
+     document.getElementById("myBtn").style.display = "none";
+   }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+ document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<footer>
+    <div class="foot1">
+      <img class="logo_ft" src="./images/logo_nav.png" alt="logo">
+      <h6>Maxime PIERRONT. Tous droits réservés. 2019©</h6>
+      
+    </div>
+    <div class="foot2">
+        <a href="http://www.iutsf.u-pec.fr/"><img class="logo_upec" src="./images/UPEC_logo.svg" alt="upec"></a> 
+    </div>
+    <div class="foot3">
+        <a href="./contact.html">Contact</a>
+        <br>
+        <a href="./map_site.html">Plan du site</a>
+        <br>
+
+    </div>
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+

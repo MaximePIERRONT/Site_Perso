@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+
+    <title>Maxime PIERRONT</title>
+    <meta charset="utf-8" /> 
+    <link rel="stylesheet" href="menu_proj.css">
+    <link rel="icon" type="image/png" href="./images/capture.png" />
+    <link rel="stylesheet" href="theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   
+
+
+  </head>
+  <body>
+      <button onclick="topFunction()" id="myBtn" title="Haut de page">↑</button>
+      <header>
+        <nav>
+          <ul>
+            <li class="nav-logo"><a href="./index.html"><img class="logo" src="./images/logo_nav.png" alt="Logo"></a></li>
+            <li class="nav-text"><a  href="./index.html">Accueil</a></li>
+            <li class="nav-text"><a class="here" href="./menu_proj.html">Projets</a></li>
+            <li class="nav-text"><a href="./cv.html">CV</a></li>
+            <li class="nav-text"><a href="./contact.html">Contact</a></li>
+            <li class="nav-right"><a href="mailto:maxime.pierront@gmail.com"><img class="little_icon" src="./images/icon_mail.png" alt="Mail"></a></li>
+            <li class="nav-right"><a href="https://fr.linkedin.com/"><img class="little_icon" src="./images/icon_linkedin.png" alt="Linkedin"></a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+    <div class="Bemp"> 
+        <div class="col1">
+            <p class="firstp">Projet : Site personnel</p>
+            <p class=text_case>
+                Un des projets est ce site internet, celui-ci a été réalisé dans le carde de ma formation à l'UPEC.
+                <br>
+                <img class="icone1" src="./images/site_perso.png">
+                <br>
+                <a class="esp" href="./projet_site.html">EN SAVOIR PLUS</a> 
+            </p>     
+          </div>
+          <div class="col2">
+            <p class="firstp">Projet : Memory</p>
+            <p class=text_case>
+                Mon dernier projet réalisé est un Memory, celui-ci a été réalisé dans le carde de ma formation à l'UPEC.
+                <br>
+                <img class="icone2" src="./images/memorytest.png">
+                <br>
+                <a class="esp" href="./projets.html">EN SAVOIR PLUS</a> 
+      
+            </p> 
+          </div>
+    </div>
+  
+
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+       window.onscroll = function() {scrollFunction()};
+     
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           document.getElementById("myBtn").style.display = "block";
+         } else {
+           document.getElementById("myBtn").style.display = "none";
+         }
+       }
+     
+       // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+      }
+     </script>
+     
+     
+     <footer>
+         <div class="foot1">
+           <img class="logo_ft" src="./images/logo_nav.png" alt="logo">
+           <h6>Maxime PIERRONT. Tous droits réservés. 2019©</h6>
+           
+         </div>
+         <div class="foot2">
+             <a href="http://www.iutsf.u-pec.fr/"><img class="logo_upec" src="./images/UPEC_logo.svg" alt="upec"></a> 
+         </div>
+         <div class="foot3">
+             <a href="./contact.html">Contact</a>
+             <br>
+             <a href="./map_site.html">Plan du site</a>
+             <br>
+         </div>
+     </footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+<head>
+
+    <title>Maxime PIERRONT</title>
+    <meta charset="utf-8" /> 
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="jquery.slide.css" />
+    <link rel="icon" type="image/png" href="./images/capture.png" />
+    <link rel="stylesheet" href="theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   
+
+
+  </head>
+  <body>
+      <button onclick="topFunction()" id="myBtn" title="Haut de page">↑</button>
+      <header>
+        <nav>
+          <ul>
+            <li class="nav-logo"><a href="./index.html"><img class="logo" src="./images/logo_nav.png" alt="Logo"></a></li>
+            <li class="nav-text"><a class="here" href="./index.html">Accueil</a></li>
+            <li class="nav-text"><a href="./menu_proj.html">Projets</a></li>
+            <li class="nav-text"><a href="./cv.html">CV</a></li>
+            <li class="nav-text"><a href="./contact.html">Contact</a></li>
+            <li class="nav-right"><a href="mailto:maxime.pierront@gmail.com"><img class="little_icon" src="./images/icon_mail.png" alt="Mail"></a></li>
+            <li class="nav-right"><a href="https://fr.linkedin.com/"><img class="little_icon" src="./images/icon_linkedin.png" alt="Linkedin"></a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+
+    <div class="slide">
+      <ul>
+        <li data-bg="./images/Ruby.png"></li>
+        <li data-bg="./images/Projet.png"></li>
+        <li data-bg="./images/siteperso.png"></li>
+
+      </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="./dist/jquery.slide.js"></script>
+    <script>
+       $(function() {
+          $('.slide').slide({
+          // auto play
+          isAutoSlide: true, 
+
+          // pause on hover
+          isHoverStop: true,
+
+          // load all images on load
+          isLoadAllImgs: true,
+
+          // shows pagination bullets
+          isShowDots: true,
+
+          // shows navigation arrows on hover
+          isHoverShowArrow: true,
+
+          // sliding speed
+          slideSpeed: 3000,
+
+          // default CSS classes
+          dotsClass: 'dots',  
+          dotActiveClass: 'active', 
+          arrowClass: 'arrow',
+          arrowLeftClass: 'arrow-left', 
+          arrowRightClass: 'arrow-right'
+          });
+        });
+
+    </script>
+    <div class="Bemp"> 
+        <div class="col1">
+            <p class="firstp">Présentation</p>
+            <p class=text_case>
+                Bonjour, je m’appelle Maxime, j’ai 19 ans j’étudie l’informatique à l’UPEC, à l'IUT de Fontainebleau.
+      
+            </p>     
+          </div>
+          <div class="col2">
+            <p class="firstp">Projet</p>
+            <p class=text_case>
+                Mon dernier projet réalisé est un Memory, celui-ci a été réalisé dans le carde de ma formation à l'UPEC.
+                <br>
+                <br>
+                <br>
+                <a class="esp" href="./projets.html">EN SAVOIR PLUS</a> 
+      
+            </p> 
+          </div>
+    </div>
+  
+    <div class="Bemp">
+        <div class="col3">
+            <p class="firstp">Curriculum vitae (CV)</p>
+            <p class=text_case>
+                Vous pouvez retrouver mon CV sur le site, vous optiendrez la plupart des informations me concernant comme les compétences, les langues parlées, ma formation...<br>
+                Vous pourrez le téléchargez directment en PDF ou l'imprimer.<br><br>  
+                <a class="esp" href="./cv.html">EN SAVOIR PLUS</a> 
+            </p>     
+        </div>
+        <div class="col4">
+            <p class="firstp">Me contacter</p>
+            <p class=text_case>
+                Un formulaire est disponible pour me contacter faci lement et rapidement.
+                <br><br> <br> 
+                <a  class="esp" href="./contact.html">EN SAVOIR PLUS</a>
+    
+            </p> 
+        </div>
+
+    </div>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+       window.onscroll = function() {scrollFunction()};
+     
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           document.getElementById("myBtn").style.display = "block";
+         } else {
+           document.getElementById("myBtn").style.display = "none";
+         }
+       }
+     
+       // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+      }
+     </script>
+     
+     
+     <footer>
+         <div class="foot1">
+           <img class="logo_ft" src="./images/logo_nav.png" alt="logo">
+           <h6>Maxime PIERRONT. Tous droits réservés. 2019©</h6>
+           
+         </div>
+         <div class="foot2">
+             <a href="http://www.iutsf.u-pec.fr/"><img class="logo_upec" src="./images/UPEC_logo.svg" alt="upec"></a> 
+         </div>
+         <div class="foot3">
+             <a href="./contact.html">Contact</a>
+             <br>
+             <a href="./map_site.html">Plan du site</a>
+             <br>
+         </div>
+     </footer>
+
+
+  </body>
+</html>
